@@ -57,10 +57,10 @@
     <form id="form">
       <fieldset>
         <legend>Info</legend>
-        <label>Name:</label><input required type="text" name="name" placeholder="Eg Morgan Okuyat"><br><br>
-        <label>Email:</label><input required value="None@gmail.com"type="email" name="email" placeholder="Eg omj.okuyatm@gmail.com"><br><br>
-        <label>Message:</label><textarea name="message" placeholder="Text"></textarea><br><br>
-        <label>Phone:</label><input type="number" name="telephone" placeholder="0783736273"><br><br>
+        <label>Name:</label><input required id="name" type="text" name="name" placeholder="Eg Morgan Okuyat"><br><br>
+        <label>Email:</label><input required id="email" required placeholder="None@gmail.com" type="email" name="email" placeholder="Eg omj.okuyatm@gmail.com"><br><br>
+        <label>Message:</label><textarea id="message" name="message" placeholder="Text"></textarea><br><br>
+        <label>Phone:</label><input id="telephone" name="number" name="telephone" placeholder="0783736273"><br><br>
         <button type="submit">SUBMIT</button>
       </fieldset>
     </form>
@@ -84,9 +84,9 @@ document.getElementById("form").addEventListener("submit", function(e) {
     name: this.name.value,
     email: this.email.value,
     message: this.message.value,
-    telephone: this.message.value
+    telephone: this.telephone.value
   };
-alert("done")
+alert("done sending dat")
   fetch(WEB_APP_URL, {
     method: "POST",
     body: JSON.stringify(data)
