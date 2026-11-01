@@ -89,7 +89,7 @@ document.getElementById("form").addEventListener("submit", function(e) {
 alert("done sending dat")
   fetch(WEB_APP_URL, {
     method: "POST",
-    body: JSON.stringify(data)
+    body: new FormData(this)
   });
 });
     
