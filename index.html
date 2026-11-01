@@ -80,12 +80,6 @@ document.getElementById("form").addEventListener("submit", function(e) {
 
   const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyBzxY4WX51MMGS4Y1TicJSz40H-MOfrEhINQDF1SOBn8VOqAgaO7xEPAJt3eimv2jf/exec"; 
 
-  const data = {
-    name: this.name.value,
-    email: this.email.value,
-    message: this.message.value,
-    telephone: this.telephone.value
-  };
 alert("done sending dat")
   fetch(WEB_APP_URL, {
     method: "POST",
