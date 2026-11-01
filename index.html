@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <meta name="description" content="I love ya'll">
+  <link rel="icon" href="logo.jpg">
+  <meta property="og:title" content="Okuyat Morgan Jeremiah">
+  <meta property="og:image" content="morg.jpeg">
+  <meta property="og:description" content="notes and info about me ">
+  <link rel="stylesheet" href="style.css">
+  <title>Welcome to my site</title>
+</head>
+<body>
+  <header>
+    <main>
+      <nav><center><b>
+        <span class="navLink current"> <a href="index.html">HOME</a>  |</span>
+        <span class="navLink"> <a href="christianity.html">CHRISTIANITY</a>  |</span>
+        <span class="navLink"> <a href="school.html">SCHOOL</a>  |</span>
+        <span class="navLink"> <a href="contentCreation.html">CONTENT</a>  |</span>
+        <span class="navLink"> <a href="coding.html">CODING</a></span>
+      </nav></center></b>
+    </main>
+  </header><code>
+  <section id="sectionOne"><center><br>
+    <br><br><br>
+    <h1>Welcome to my website</h1><hr></center>
+    <div class="banner">
+      <h2>Jesus</h2><hr class="l">
+      <p>We were all created for a purpose. What ever we do, it all comes to why we were created. God created man, Adam and Eve first, they disobeyed Him and sin came into the world, sin caused separation from God, Gods gift is eternal life through Jesus. He sent Jesus to die for us that we may have life. So he gave us a choice to accept Jesus as our Lord and saviour. <b>The MOST IMPORTANT decision you can ever make is to ACCEPT and BELIEVE that JESUS is your personal Lord and saviour truly in your  heart. Confess and he will save you</b>. Join us at <a href=”https://www.faith4ug.ug”>faith baptist church uganda</a></p>
+    </div><br><br>
+    <div class="banner">
+      <h2>Coding</h2><hr>
+      <p>Three years ago, I was in senior 1, about grade 8, I had no background in working with computers, had no programming knowledge to the point where I could never imagine the word <b>programming</b>. What I loved was how computer ls worked. I remember the first time I typed on a standard qwerty physical keyboard. Up till this point, I can never forget that. Many people still ask me how I'm adaptive to fields in ICT, but it was at that point that I had to build a foundation. I had to learn how to code, I had to learn math and get to the point where I am. <br> <br>I learned Python first, html and css with a little javascript. One of my favourite programming language is C, being a high level programming language, it's efficiency and speed.</p>
+    </div><br><br>
+    <div class="banner">
+      <h2>School</h2><hr>
+      <p>School is the foundation of literacy and formal behaviour. The education we attain from school lays the foundation of how better people we could be in the variety of fields in life, Subjects like Physics, Mathematics and Chemistry show us how the world works. History and Geography tell us about our exustance and the features of the earth. Language defines how we communicate, giving us a better way of dealing with different aspects of life. I would like to point out something Franky. My future dreams are large and precise. I want to be way rich like any other person would. According to one interview I watched of Elin musk, he said that going to colage is okay for social purposes, it's not relevant in the future. Robert Kiyosaki on the other hand says that “<em> we should not work for money, we should let money work for us.</em>. It starts from knowing what our goals are and laying a plan on how to archiever those goals and focusing on building business and scalling them to bigger Business.</p>
+    </div><br><br>
+    <div class="banner">
+      <h2>Content</h2><hr>
+      <p>These's like this thing called YouTube Partner Program, where your paid $1.61 - $30 per 1000 views, to join the program, you have to meet the threshold of 1000 subscribers and 4000 watch hours or 1M views on shorts for the last 90 days on your YouTube channel. The main source of money is the add companies. They give their adds to people depending on the niche ie, tech adds are shown on tech content. This is there the creator comes in, adds are shown on his channel through YouTube, YouTube takes its cut and you take your cut. Both of you get money.  So quality videos win the game. Imagine your CPM(cost per milie is $5) making your RPM(Revenue per milie) about $3, with 1M views gives you $3000. But here's where it gets interesting. Memberships, superchats, stickers, etcetera. People pay directly to your channel if you're monetized. Brand deals come in and more that I can't mention. I thought of starting my YouTube channel. </p>
+    </div><br><br>
+  </section></code>
+  <section id="sectionTwo">
+    <div class="morg">
+      <img class="img1" src="morg.jpeg" alt="MorganPic">
+      <div class="details"><code>
+        <span class="name1">Okuyat Morgan Jeremiah</span><hr>
+        <span class="descr">Christian, Student, Developer and Content creator. <br><hr>2011 baby</span>
+      </div></code>
+    </div><br><br>
+  </section>
+  <center>
+    <form id="form">
+      <fieldset>
+        <legend>Info</legend>
+        <label>Name:</label><input required type="text" name="name" placeholder="Eg Morgan Okuyat"><br><br>
+        <label>Email:</label><input required value="None@gmail.com"type="email" name="email" placeholder="Eg omj.okuyatm@gmail.com"><br><br>
+        <label>Message:</label><textarea name="message" placeholder="Text"></textarea><br><br>
+        <label>Phone:</label><input type="number" name="telephone" placeholder="0783736273"><br><br>
+        <button type="submit">SUBMIT</button>
+      </fieldset>
+    </form>
+  </center>
+  <br><br>
+  <footer>
+    <center>
+      <em>Located in Uganda</em><br>
+      <em>Kololo Senior Secondary School</em><br><em>2026<br>
+      <em>No copyright</em>
+    </center>
+  </footer>
+    <script>
+    
+document.getElementById("form").addEventListener("submit", function(e) {
+  e.preventDefault(); // stop page reload
+
+  const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyBzxY4WX51MMGS4Y1TicJSz40H-MOfrEhINQDF1SOBn8VOqAgaO7xEPAJt3eimv2jf/exec"; 
+
+  const data = {
+    name: this.name.value,
+    email: this.email.value,
+    message: this.message.value,
+    telephone: this.message.value
+  };
+alert("done")
+  fetch(WEB_APP_URL, {
+    method: "POST",
+    body: JSON.stringify(data)
+  });
+});
+    
+    </script>
+</body>
+</html>

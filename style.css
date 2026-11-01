@@ -1,0 +1,84 @@
+
+  nav {
+    border-radius: 10px;
+    color: yellow;
+    background: linear-gradient(to top, black, brown);
+    cursor: pointer;
+    position: fixed;
+    width: 95%;
+    padding: 5px;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .navLink {
+    background: linear-gradient(to top, black, brown);
+    opacity: 80%;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .navLink.hover {
+    background: linear-gradient(to top, brown, black);background: linear-gradient(to top, black, brown);
+  }
+  .navLink.active{
+    
+  }
+  body {
+    background: linear-gradient(to top, tomato);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  p {
+    font-size: 18px;
+  }
+  .banner, form, fieldset{
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    /*linear-gradient(to left, yellow, white, black);*/
+    
+    border: none;
+    background-color: rgba(1,1,0,0.3);
+  }
+  .morg {
+    display: flex;
+    background-color: tomato;
+    position: relative;
+    box-shadow: 5px -5px 5px black;
+    justify-content: space-between;
+    border-radius: 10px;
+  }
+  .details {
+    border-radius: 10px;
+    margin-left: 5px;
+    background-color: rgba(10,10,0,0.5);
+    color: lightblue;
+    padding: 10px;
+    box-shadow: -5px 5px 5px black;
+    width: 70%;
+  }
+  .img1 {
+    border-radius: 30%;
+    width:20%;
+    box-shadow: -5px 5px 5px black;
+  }
+  footer { 
+    width: 100%;
+    background: linear-gradient(to top, orange, yellow);
+    padding: 10px;
+  }
+  .name1 {
+    font-size: 27;
+  }
+  .current {
+    color: white;
+  }
+input, textarea{
+  background-color:lightblue;
+  border: none;
+  border-radius: 10px;
+  padding:5px;
+}
